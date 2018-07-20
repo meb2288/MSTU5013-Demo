@@ -1,0 +1,12 @@
+'.text.html.basic':
+  'riotjs':
+    'prefix': 'riotjs'
+    'body': '''
+      <script src="tags/${1:tagName}.tag" type="riot/tag"></script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.11.1/riot+compiler.js"></script>
+
+      <script>
+        riot.mount('*');
+      </script>
+    '''
