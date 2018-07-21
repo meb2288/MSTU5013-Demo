@@ -2,7 +2,7 @@
 
   <h1> Mary's Monster Pet</h1>
   <h2> Why isn't this working? </h2>
-  
+
   <button type="button" onclick= { event }> Happy </button>
 
   <img src="images/{ petImage }.png" class="smaller-image" ref="pet">
