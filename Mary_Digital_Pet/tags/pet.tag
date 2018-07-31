@@ -1,7 +1,8 @@
 <pet>
 
-  <h1> Mary's Monster Pet </h1>
-  <h2> Make the monster happy, so it doesn't run away! </h2>
+  <h1> Hello! </h1>
+  <h2> Meet Mary's Monster Pet </h2>
+  <h3> DIRECTIONS: Make the monster happy, so it doesn't run away! </h3>
   <img src="images/{ petImage }.png" class="smaller-image" ref="pet">
   <div>
     <button type="button" onclick= { pet }> Pet </button>
@@ -22,10 +23,14 @@
   </div>
   
   <script>
+  
+    const TOTALHEALTH = 100;
+    const WINHEALTH = TOTALHEALTH * 1.2;
+    
     this.petImage = "monster";
 
     this.petHappiness = 0;
-    this.petHunger = 0;
+    this.petHunger = 100;
     
     this.percentHappiness = this.petHappiness;
     this.percentHunger = this.petHunger;
@@ -58,7 +63,7 @@
     }
     button {
       font-size: 15px;
-      padding: 0.5em;
+        padding: 10px;
       border-radius: 10px;
       background-color: pink;
       border: 1px solid black;
